@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  background-color: #FAEF5D;
+}
+
+h1 {
+  background-color: #FF004D;
+  color: #fff;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+h4 {
+    text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  
+  
+  .computer,
+  .player {
+    text-align: center;
+  }
+  
+  .image-container {
+    text-align: center;
+  }
+  
+  .image-container h3 {
+    margin-top: 10px; /* Adjust spacing as needed */
+  }
+  
+.computer,
+.player {
+  flex: 1; /* Distribute space equally between computer and player */
+  display: flex;
+  justify-content: center; /* Center images horizontally */
+  text-align: center;
+}
+
+.computer img,
+.player img {
+  width: 100%; /* Increase width */
+  max-width: 250px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+
+}
+
+.label {
+    margin-top: 10x;
+    text-align: center;
+}
+
+.shakeComputer {
+  animation: shakeComputer 0.8s linear;
+}
+
+.shakePlayer {
+  animation: shakePlayer 0.8s linear;
+}
+
+.choice {
+  height: 87px;
+  width: 87px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background-color: #081b31;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  margin-top: 10rem;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+  font-size: 4rem;
+}
+
+.msg-container {
+  margin-top: 5rem;
+}
+
+#msg {
+  background-color: #006769;
+  color: #fff;
+  font-size: 2rem;
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+@keyframes shakeComputer {
+  0% {
+    transform: rotate(-30deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes shakePlayer {
+  0% {
+    transform: rotate(30deg);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+  

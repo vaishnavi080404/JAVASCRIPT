@@ -1,0 +1,44 @@
+h1 {
+    color:rgb(7, 61, 147);
+    background-color: antiquewhite;
+}
+
+body {
+    background-color: rgb(247, 247, 134);
+
+}
+
+button {
+    background-color:rgb(94, 40, 145);
+    color: aliceblue;
+}
+.head {
+    color:rgb(41, 83, 83)
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border:1px solid black;
+    margin :5px;
+    text-align: center;
+    background-color: red;
+}
+
+#box {
+    height: 100px;
+    width: 100px;
+    border:1px solid black;
+    margin :5px;
+    text-align: center;
+    background-color: red;
+}
+
+.para {
+    color:red;
+
+}
+
+.newClass {
+    background-color: green;
+}
